@@ -1,21 +1,27 @@
-# Python
+# Python cache files
 __pycache__/
 *.pyc
-*.pyo
 
-# Conda
-.env
-.venv
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment folders
 env/
+venv/
+.conda/
 
-# VS Code
+# VS Code settings
 .vscode/
 
 # System files
 .DS_Store
+Thumbs.db
 
-# Data files (optional if large)
-*.csv
+# Large datasets (optional)
+*.zip
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Streamlit cache
+.streamlit/
+
+# Temporary files
+*.log

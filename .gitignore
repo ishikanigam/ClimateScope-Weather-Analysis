@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Conda
+.env
+.venv
+env/
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+
+# Data files (optional if large)
+*.csv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/

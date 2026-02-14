@@ -9,7 +9,11 @@ print(df.head())
 
 # Show column info
 print("\nDataset info:")
+<<<<<<< HEAD
 df.info()
+=======
+print(df.info())
+>>>>>>> b500aecd70d8b85242c7e76664911a60cda70e21
 
 # Show statistics
 print("\nStatistics:")

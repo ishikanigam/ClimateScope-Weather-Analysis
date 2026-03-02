@@ -97,8 +97,6 @@ The dashboard dynamically updates visualizations based on user selections.
 
 ---
 
----
-
 ## Technologies Used
 
 - Python  

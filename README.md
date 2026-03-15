@@ -34,53 +34,37 @@ https://www.kaggle.com/datasets/nelgiriyewithana/global-weather-repository
 
 ---
 
-# Milestone 2: Core Analysis & Visualization Design
+## Milestone 2: Core Analysis & Visualization Design
 
-## Statistical Analysis Performed
+### Tasks Completed
 
-- Distribution analysis of temperature, humidity, wind speed, and precipitation  
-- Correlation analysis between key weather variables  
-- Seasonal pattern analysis  
-- Temperature volatility analysis by country  
-- Latitude–temperature gradient analysis  
-- Rolling time-series trend analysis  
+- Performed statistical analysis of the weather dataset
+- Analyzed distributions of temperature, humidity, rainfall, and wind speed
+- Computed correlation matrices to understand relationships between climate variables
+- Performed seasonal analysis using derived season features
+- Detected extreme weather events using quantile thresholds and anomaly detection
+- Compared weather conditions across countries
+- Implemented rolling averages to observe temperature trends
+- Designed visualization plan for the interactive dashboard
 
----
+### Key Analysis Performed
 
-## Extreme Event Detection
+- Temperature volatility analysis by country
+- Latitudinal temperature gradient analysis
+- Seasonal climate pattern analysis
+- Extreme temperature event detection
+- Flood risk detection using rainfall thresholds
+- Correlation analysis between climate variables
 
-The following extreme weather conditions were identified:
+### Visualization Types Selected
 
-- Extreme temperature events  
-- Heavy rainfall / flood-risk events  
-- High wind speed events  
-
-Thresholds were determined using statistical quantiles to ensure robustness.
-
----
-
-## Comparative Climate Analysis
-
-Cross-country comparisons were performed to identify:
-
-- Hottest and coldest regions  
-- Most volatile climates  
-- Seasonal variability differences  
-- Regional rainfall patterns  
-
----
-
-## Visualization Strategy
-
-The dashboard uses appropriate visualization types:
-
-- **Line charts** → time-series trends  
-- **Scatter plots** → correlation analysis  
-- **Heatmaps** → seasonal and correlation patterns  
-- **Histograms** → distribution analysis  
-- **Choropleth map** → global geographic patterns  
-
----
+- Line charts for time-series trends
+- Histograms for distribution analysis
+- Box plots for outlier detection
+- Scatter plots for correlation analysis
+- Choropleth maps for geographic patterns
+- Heatmaps for correlation matrices
+- Bar charts for country comparisons
 
 ## Interactive Dashboard
 
@@ -109,19 +93,84 @@ The dashboard dynamically updates visualizations based on user selections.
 - Git & GitHub  
 - VS Code  
 
----
 
-## Current Status
+### Milestone 2 Status
 
-✅ Milestone 1 — Completed  
-✅ Milestone 2 — Completed  
+Completed Successfully
 
-The project now includes statistical analysis, extreme event detection, and an interactive dashboard for climate exploration.
-
----
+Statistical insights and visualization design were finalized for dashboard development.
 
 ### Note on Dashboard Scope
 
 The current dashboard implementation focuses on exploratory analytics and interactive visualization as required for Milestone 2. 
 
 The architecture has been designed to be extensible, and further refinements such as advanced predictive modeling, enhanced interactivity, and deployment optimization are planned for subsequent milestones.
+
+---
+
+## Milestone 3: Interactive Climate Dashboard
+
+### Objective
+
+Develop a fully interactive climate analytics dashboard to visualize global weather patterns and extreme climate events.
+
+### Dashboard Features
+
+- Interactive Streamlit dashboard
+- Dynamic filters for country, season, and date range
+- Real-time updates of visualizations based on user input
+- Multiple interactive Plotly charts
+- Insight explanations for each visualization
+
+### Visualizations Implemented
+
+- Temperature distribution histogram
+- Temperature trend over time
+- Seasonal temperature patterns
+- Correlation heatmap of climate variables
+- Seasonal correlation heatmaps
+- Latitudinal temperature gradient
+- Country-wise temperature comparison
+- Global temperature choropleth map
+- Temperature volatility analysis
+- Extreme temperature event detection
+- Flood risk detection using rainfall distribution
+- Wind speed distribution (Weibull approximation)
+- Humidity vs precipitation correlation
+- Radar chart for country climate comparison
+- Bubble chart for temperature–humidity–wind interaction
+- Sunburst chart for seasonal temperature distribution
+
+### Additional Analytical Features
+
+- Rolling temperature trend analysis
+- Extreme weather anomaly detection
+- Climate insight storytelling
+- AI-generated climate insights
+- Environmental metrics analysis
+- Interactive climate comparison tools
+
+### Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Plotly
+- Streamlit
+- Git
+- GitHub
+
+### Milestone 3 Status
+
+Completed Successfully
+
+An interactive climate analytics dashboard was developed to explore global weather patterns, climate risks, and environmental trends.
+
+## Current Status
+
+✅ Milestone 1 — Completed  
+✅ Milestone 2 — Completed  
+✅ Milestone 3 — Completed  
+The project now includes statistical analysis, extreme event detection, and an interactive dashboard for climate exploration.
+
+---

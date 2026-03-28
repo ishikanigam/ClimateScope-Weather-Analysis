@@ -19,9 +19,14 @@ Thumbs.db
 
 # Large datasets (optional)
 *.zip
+data/
+*.csv
 
 # Streamlit cache
 .streamlit/
 
 # Temporary files
 *.log
+
+# Ignore the ClimateScope_B13 directory
+ClimateScope_B13/

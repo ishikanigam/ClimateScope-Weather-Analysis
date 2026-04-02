@@ -1,0 +1,259 @@
+ Test Cases – Climate Decision Intelligence System
+
+This document outlines comprehensive testing performed on the ClimateScope Dashboard and the Climate Decision Intelligence System application.
+
+---
+
+ Test Case 1: Basic Functionality Check
+
+Input:
+
+- Country: India
+- Activity: Travel
+- Risk Tolerance: Medium
+
+Expected Output:
+
+- Climate metrics should display correctly
+- Risk breakdown should show values (not zero)
+- Final decision should be Moderate or High Risk
+
+Result:  Passed
+
+---
+
+ Test Case 2: Dynamic Country Selection
+
+Input:
+
+- Change country from India → UK → UAE
+
+Expected Output:
+
+- Temperature, rainfall, humidity, wind values should update
+- Risk score should change accordingly
+
+Result:  Passed
+
+---
+
+ Test Case 3: Risk Tolerance Sensitivity
+
+Input:
+
+- Same country, change:
+  - Low → Medium → High
+
+Expected Output:
+
+- Decision threshold should change
+- Output should shift from High → Moderate → Low
+
+Result:  Passed
+
+---
+
+ Test Case 4: Extreme Climate Condition
+
+Input:
+
+- Country: UAE
+- Activity: Outdoor Sports
+- Risk: Low
+
+Expected Output:
+
+- High temperature risk
+- Final decision: HIGH RISK
+
+Result:  Passed
+
+---
+
+ Test Case 5: Rainfall-Based Risk Detection
+
+Input:
+
+- Country with high rainfall
+- Activity: Travel
+
+Expected Output:
+
+- Rainfall risk increases
+- Smart recommendation shows rain warning
+
+Result: Passed
+
+---
+
+ Test Case 6: Wind Risk Evaluation
+
+Input:
+
+- Country with high wind speed
+
+Expected Output:
+
+- Wind risk should increase
+- Recommendation should warn about strong winds
+
+Result: Passed
+
+---
+
+ Test Case 7: Risk Breakdown Visibility (Critical Fix)
+
+Issue:
+
+- Risk breakdown was not visible earlier
+
+Fix Applied:
+
+for k, v in breakdown.items():
+    st.write(f"{k}: **{v}**")
+
+Expected Output:
+
+- All 4 risks should display values
+
+Result: Fixed and Passed
+
+---
+
+ Test Case 8: Variable Initialization Bug
+
+Issue:
+
+- avg_temp used before being defined
+
+Fix Applied:
+
+- Moved metric calculation above comparison section
+
+Expected Output:
+
+- No runtime errors
+- Comparison charts render correctly
+
+Result: Fixed and Passed
+
+---
+
+ Test Case 9: Forecast Simulation
+
+Input:
+
+- Select 3–7 forecast days
+
+Expected Output:
+
+- Simulated values should generate
+- Line chart should display trend
+
+Result: Passed
+
+---
+
+ Test Case 10: Export Report Feature
+
+Input:
+
+- Click "Download Report"
+
+Expected Output:
+
+- file downloads
+- Contains correct climate summary and decision
+
+Result: Passed
+
+---
+
+ Test Case 11: Decision History Storage
+
+Input:
+
+- Click "Save Decision" multiple times
+
+Expected Output:
+
+- Entries should store in session
+- Table should display recent history
+
+Result: Passed
+
+---
+
+ Test Case 12: User Feedback System
+
+Input:
+
+- Provide rating and comments
+
+Expected Output:
+
+- Feedback stored
+- Average rating calculated
+
+Result: Passed
+
+---
+
+ Test Case 13: Global Filters Impact
+
+Input:
+
+- Apply sidebar filters (country, season, date)
+
+Expected Output:
+
+- All charts update accordingly
+- No blank visuals
+
+Result: Passed
+
+---
+
+ Test Case 14: Empty/Edge Data Handling
+
+Input:
+
+- Filter dataset heavily
+
+Expected Output:
+
+- App should not crash
+- Either show warning or minimal data
+
+Result: Passed
+
+---
+
+ Test Case 15: Performance Check
+
+Input:
+
+- Load full dataset
+
+Expected Output:
+
+- Dashboard loads within few seconds
+- No freezing or lag
+
+Result: Passed
+
+---
+
+Conclusion
+
+All critical functionalities including:
+
+- Data processing
+- Visualization
+- Decision system
+- Interactivity
+- User inputs
+
+have been successfully tested and validated.
+
+The application is stable, accurate, and ready for deployment and presentation.

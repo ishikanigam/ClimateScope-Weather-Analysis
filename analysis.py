@@ -737,3 +737,6 @@ else:
     print("wind_kph column not found")
 
 print("Insight: Weak relationship between humidity and precipitation.")
+
+df.to_csv("data/weather_final_analysis.csv", index=False)
+print("\nFinal dataset with analysis features saved as data/weather_final_analysis.csv")

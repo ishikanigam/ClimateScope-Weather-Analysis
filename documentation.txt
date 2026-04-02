@@ -1,0 +1,321 @@
+ClimateScope Weather Analytics
+
+Project Documentation
+
+---
+
+1. Introduction
+
+This document provides complete instructions and guidance for setting up, running, and using the ClimateScope Weather Analytics project.
+
+The system is designed to analyze global weather data, visualize climate patterns, and provide intelligent recommendations through an integrated decision-support application.
+
+---
+
+2. System Requirements
+
+Ensure the following software is installed:
+
+Software Requirements:
+
+- Python (version 3.10 or above)
+- Visual Studio Code or any IDE
+- Git (latest version)
+
+Python Libraries:
+
+- pandas
+- numpy
+- plotly
+- streamlit
+
+---
+
+3. Project Setup Instructions
+
+Step 1: Clone the Repository
+
+git clone <your-repository-link>
+cd ClimateScope
+
+---
+
+Step 2: Create Virtual Environment (Optional but Recommended)
+
+python -m venv venv
+
+Activate Environment:
+
+Windows:
+
+venv\Scripts\activate
+
+Mac/Linux:
+
+source venv/bin/activate
+
+---
+
+Step 3: Install Dependencies
+
+pip install pandas numpy plotly streamlit
+
+(Or install from requirements file if available)
+
+---
+
+Step 4: Run the Dashboard
+
+streamlit run dashboard.py
+
+---
+
+4. Project Structure
+
+ClimateScope/
+│
+├── data/
+│   └── weather_cleaned.csv
+    └── weather_final_analysis.csv
+│   └── weather.csv
+│
+├── analysis.py
+├── dashboard.py
+├── documentation.txt
+├── Milestone1_summary.md
+├── Milestone2_summary.md
+├── Milestone3_summary.md
+├── Milestone4_summary.md
+├── README.md
+├── report.txt
+├── summary.txt
+├── test_cases.txt
+
+---
+
+5. How to Use the Dashboard
+
+5.1 Overview Tab
+
+Displays:
+
+- Key climate indicators (temperature, humidity, rainfall)
+- Country comparisons
+- Climate volatility analysis
+- Summary insights
+
+---
+
+5.2 Temperature Analysis Tab
+
+Provides:
+
+- Temperature distribution
+- Seasonal patterns
+- Rolling averages
+- Time-series trends
+
+---
+
+5.3 Climate Relationships Tab
+
+Includes:
+
+- Correlation heatmaps
+- Seasonal correlations
+- Humidity vs precipitation analysis
+- Bubble chart (multi-variable relationship)
+- Radar chart for country comparison
+
+---
+
+5.4 Extreme Events Tab
+
+Displays:
+
+- Temperature anomalies
+- Extreme temperature events
+- Flood risk detection
+- Wind speed distribution
+- Outlier detection
+
+---
+
+5.5 Geographic Insights Tab
+
+Includes:
+
+- Choropleth maps
+- Global temperature evolution
+- Latitude vs temperature analysis
+- Timezone-based insights
+
+---
+
+5.6 Climate Risk Advisor (Application Tab)
+
+This is the core application of the project.
+
+Inputs:
+
+- Country selection
+- Risk tolerance
+- Activity type
+
+Outputs:
+
+- Climate summary (temperature, humidity, rainfall, wind)
+- Risk breakdown
+- Risk score and gauge visualization
+- Final decision (Low, Moderate, High Risk)
+- Activity recommendation
+
+---
+
+6. Application Features Explained
+
+6.1 Risk Breakdown
+
+Each climate factor contributes to risk:
+
+- Temperature → Heat risk
+- Rainfall → Flood risk
+- Wind → Storm risk
+- Humidity → Comfort risk
+
+---
+
+6.2 Risk Score
+
+- Combined score from all factors
+- Scaled between 0–10
+- Used to determine final decision
+
+---
+
+6.3 Decision Engine
+
+- Compares risk score with user tolerance
+- Produces:
+  - Low Risk
+  - Moderate Risk
+  - High Risk
+
+---
+
+6.4 Forecast Simulation
+
+- Simulates short-term climate trends
+- Helps in planning future activities
+
+---
+
+6.5 Country Comparison
+
+- Compares climate metrics across countries
+- Helps understand regional differences
+
+---
+
+6.6 Decision History
+
+- Stores user decisions in session
+- Allows review of previous results
+
+---
+
+6.7 Feedback System
+
+- Collects user ratings and comments
+- Helps improve system usability
+
+---
+
+6.8 Report Export
+
+- Generates downloadable text report
+- Includes climate metrics and decisions
+
+---
+
+7. Data Processing Workflow
+
+1. Load dataset
+2. Clean and preprocess data
+3. Generate new features (season, month, etc.)
+4. Apply filters
+5. Perform statistical analysis
+6. Generate visualizations
+7. Feed data into application logic
+
+---
+
+8. Key Algorithms Used
+
+- Rolling averages for trend detection
+- Quantile-based thresholds for risk detection
+- Z-score for anomaly detection
+- Volatility calculation (standard deviation / mean)
+
+---
+
+9. User Guidelines
+
+- Use sidebar filters to refine analysis
+- Select specific countries for focused insights
+- Adjust risk tolerance for personalized results
+- Use application tab for decision-making
+- Download reports for offline use
+
+---
+
+10. Troubleshooting
+
+Issue: No data displayed
+
+- Check dataset path
+- Ensure CSV file exists
+
+Issue: Charts not visible
+
+- Verify column names
+- Ensure filters are not too restrictive
+
+Issue: Risk values showing zero
+
+- Ensure dataset has valid values
+- Check quantile calculations
+
+---
+
+11. Limitations
+
+- Forecast is simulated, not real-time
+- No live API integration
+- Depends on dataset quality
+
+---
+
+12. Future Improvements
+
+- Live weather API integration
+- Machine learning-based predictions
+- Real-time alerts
+- Improved UI/UX
+
+---
+
+13. Conclusion
+
+This documentation provides complete guidance for using and understanding the ClimateScope system.
+
+The project is designed to be:
+
+- Interactive
+- User-friendly
+- Insightful
+- Practical
+
+It demonstrates the application of data analytics in solving real-world climate-related problems.
+
+---
